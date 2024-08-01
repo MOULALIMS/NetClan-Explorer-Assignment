@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29465B">
+
+        <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_section"
+            android:contentDescription="Menu"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/location_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Howdy "
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/menu_button"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kattigenahalli, Bengaluru"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/location_greeting"
+            android:paddingStart="20dp"
+            android:layout_toRightOf="@id/menu_button"
+            android:paddingBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/refine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter_object"
+            android:contentDescription="Refine"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refine"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/refine"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="5dp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabTextColor="#ffffff"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabMode="fixed"
+        android:contentDescription="null"
+        android:background="#2B547E"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_layout"/>
+
+
+</RelativeLayout>

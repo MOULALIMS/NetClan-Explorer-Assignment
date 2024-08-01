@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="explore"
+        android:icon="@drawable/eye"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/nav_connections"
+        android:icon="@drawable/connection"
+        android:title="connections"/>
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat"
+        android:title="chats"/>
+    <item
+        android:id="@+id/nav_contacts"
+        android:icon="@drawable/contacts"
+        android:title="contacts"/>
+    <item
+        android:id="@+id/nav_groups"
+        android:icon="@drawable/groups"
+        android:title="groups"/>
+</menu>
